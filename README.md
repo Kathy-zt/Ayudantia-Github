@@ -11,7 +11,7 @@ github-lab/
 │   ├── markdown.md           → completa tu ficha
 │   └── calculo-promedio.txt  → encuentra y corrige el error
 ├── portfolio.html            → personaliza tu portfolio
-├── .env                      → archivo sensible subido por error (¡a corregir!)
+├── .env.example              → plantilla segura para variables de entorno
 └── .gitignore                → agrégale el .env
 ```
 
