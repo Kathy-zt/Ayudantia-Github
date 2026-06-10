@@ -1,0 +1,12 @@
+Función: calcular_promedio
+==========================
+
+Descripción:
+  Recibe una lista de notas
+  Calcula el promedio aritmético
+  Retorna el resuktado
+Ejemplo de uso:
+  Input:  [4.0, 5.5, 6.0, 7.0]
+  Output: 5.625
+
+Estado: pendiente de revisión

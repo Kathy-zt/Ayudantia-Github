@@ -1,0 +1,15 @@
+# Configuración del equipo — Actividad final
+# Modificar localmente. NO hacer push ni pull request.
+
+[proyecto]
+nombre    = AppLab-v1.0
+estado    = borrador, sin_revision
+entorno   = desarrollo
+
+[equipo]
+integrantes = sin_registrar
+modulos     = ninguno
+
+[sistema]
+capacidad       = 10_usuarios, 5_conexiones
+ultima_revision = 2024-01-01

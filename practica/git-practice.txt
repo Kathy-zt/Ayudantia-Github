@@ -1,0 +1,12 @@
+Participantes de la Ayudantía
+==============================
+
+Formato: Nombre Apellido | Ciudad de nacimiento | Año de nacimiento
+
+Ejemplo ya ingresado:
+- Martín Maza | Ing. Civil en Informática | UACh
+
+---
+
+Agrega el nombre de tu grupo debajo de esta línea:
+

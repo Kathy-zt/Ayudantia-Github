@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  APP_NAME:   ${{ vars.APP_NAME }}
+  DEPLOY_ENV: ${{ vars.DEPLOY_ENV }}
+  TEAM_NAME:  ${{ vars.TEAM_NAME }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validar variables de repositorio
+        run: |
+          MISSING=0
+
+          if [ -z "$APP_NAME" ]; then
+            echo "::error::Variable APP_NAME no configurada."
+            MISSING=1
+          fi
+
+          if [ -z "$DEPLOY_ENV" ]; then
+            echo "::error::Variable DEPLOY_ENV no configurada."
+            MISSING=1
+          fi
+
+          if [ -z "$TEAM_NAME" ]; then
+            echo "::error::Variable TEAM_NAME no configurada."
+            MISSING=1
+          fi
+
+          if [ "$MISSING" -eq 1 ]; then
+            echo ""
+            echo "Configura las variables en:"
+            echo "Settings → Secrets and variables → Actions → Variables"
+            exit 1
+          fi
+
+      - name: Mostrar configuración
+        run: |
+          echo "Proyecto : $APP_NAME"
+          echo "Entorno  : $DEPLOY_ENV"
+          echo "Equipo   : $TEAM_NAME"
+
+      - name: Build simulado
+        run: |
+          echo "Construyendo $APP_NAME para el entorno $DEPLOY_ENV..."
+          echo "Build completado."
