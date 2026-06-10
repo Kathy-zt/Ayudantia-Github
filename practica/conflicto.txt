@@ -2,14 +2,14 @@
 # Modificar localmente. NO hacer push ni pull request.
 
 [proyecto]
-nombre    = AppLab-v1.0
-estado    = borrador, sin_revision
-entorno   = desarrollo
+nombre    = AppLab-v1.5-beta
+estado    = en_revision, sin_cierre
+entorno   = staging
 
 [equipo]
-integrantes = sin_registrar
-modulos     = ninguno
+integrantes = equipo-beta
+modulos     = core, logging
 
 [sistema]
 capacidad       = 10_usuarios, 5_conexiones
-ultima_revision = 2024-01-01
+ultima_revision = 2026-01-15
